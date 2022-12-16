@@ -1,0 +1,25 @@
+Miran Member
+
+
+*********************************************************
+ourvector<6Voters> stats:
+ # of vectors created:   1
+ # of elements inserted: 50
+ # of elements accessed: 150
+*********************************************************
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   659
+ # of elements inserted: 6657
+ # of elements accessed: 4290
+*********************************************************
+*********************************************************
+ourvector<8District> stats:
+ # of vectors created:   1
+ # of elements inserted: 50
+ # of elements accessed: 250
+*********************************************************
+I initialized total of 3 vectors. 1: to hold districts.txt information 2: to hold information of each state’s districts 3: to hold information on eligible_voters. 
+        After running the code, I ended up creating a total of 661 vectors throughout the code. This was difficult to cut down to make it more efficient because my struct for each state created its own vector to house the specific district information on line 11. I could have used a different type of data holder such as an array, but I wanted to get comfortable using Vectors so I stuck with it. 
+        I inserted into the vectors a total of 6057 times. This number is huge again because I used vectors to hold my district info. I also used two different vectors for holding eligible_voters.txt info, and another vector for districts.txt file information. This meant that each time I wanted to use the element from the same state I had to access it twice as seen on line 325 - 339. This could have easily been avoided had I chosen to use only one vector to store all the information in. 
+        I accessed the vectors a total of 4790 times. This was hard to avoid cause I used linear search each time I would want to search for a state. And by using 2 different vectors for eligible_voters and districts, I made things far worse.
